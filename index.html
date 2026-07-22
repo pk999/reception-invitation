@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#7f1d1d">
+    <meta
+      name="description"
+      content="Reception dinner invitation with event details, RSVP, venue notes, and calendar links."
+    >
+    <title>Reception Dinner Invitation</title>
+    <link rel="preload" href="assets/hero-mandap.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Reception invitation home">
+        <span data-initials>N + Y</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" data-nav>
+        <a href="#story">Story</a>
+        <a href="#events">Events</a>
+        <a href="#venue">Venue</a>
+        <a href="#gallery">Gallery</a>
+        <a class="nav-rsvp" href="#rsvp">RSVP</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Together with their families</p>
+          <h1 id="hero-title" data-couple-names>Nikhil & Your Partner</h1>
+          <p class="hero-date">
+            <span data-date-label>November 4, 2026</span>
+            <span aria-hidden="true">/</span>
+            <span data-city>Reception venue to be shared</span>
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#rsvp">RSVP</a>
+            <a class="button button-secondary" href="#events">View Events</a>
+          </div>
+        </div>
+        <div class="countdown" aria-label="Countdown to reception dinner">
+          <div>
+            <strong data-count-days>000</strong>
+            <span>Days</span>
+          </div>
+          <div>
+            <strong data-count-hours>00</strong>
+            <span>Hours</span>
+          </div>
+          <div>
+            <strong data-count-minutes>00</strong>
+            <span>Minutes</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band" aria-label="Invitation">
+        <div class="section-inner intro-grid">
+          <div>
+            <p class="eyebrow">The Invitation</p>
+            <h2>We would love to celebrate with you.</h2>
+          </div>
+          <p>
+            After a private family wedding in Tirumala on November 1, 2026, join us
+            for a warm reception dinner on November 4 at 8:00 PM.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="story" aria-labelledby="story-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Our Story</p>
+            <h2 id="story-title">A Few Favorite Chapters</h2>
+          </div>
+          <div class="story-grid" data-story-list></div>
+        </div>
+      </section>
+
+      <section class="section event-band" id="events" aria-labelledby="events-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Schedule</p>
+            <h2 id="events-title">Reception Details</h2>
+          </div>
+          <div class="timeline" data-event-list></div>
+          <div class="calendar-actions">
+            <a class="button button-primary" data-google-calendar target="_blank" rel="noopener" href="#">Google Calendar</a>
+            <button class="button button-secondary" type="button" data-download-ics>Download .ics</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section split-section" id="venue" aria-labelledby="venue-title">
+        <div class="section-inner split-grid">
+          <div>
+            <p class="eyebrow">Location</p>
+            <h2 id="venue-title" data-venue-name>Reception Dinner</h2>
+            <p class="large-copy" data-venue-address>Venue details will be shared with invited family and guests.</p>
+            <div class="venue-actions">
+              <a class="button button-primary" data-map-link target="_blank" rel="noopener" href="#">Open Map</a>
+              <a class="button button-secondary" href="#travel">Travel Notes</a>
+            </div>
+          </div>
+          <div class="invitation-panel" aria-label="Reception dinner invitation summary">
+            <span data-initials>N + Y</span>
+            <h3 data-couple-names>Nikhil & Your Partner</h3>
+            <p data-date-label>November 4, 2026</p>
+            <p data-city>Reception venue to be shared</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="travel" aria-labelledby="travel-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Guest Notes</p>
+            <h2 id="travel-title">Travel & Stay</h2>
+          </div>
+          <div class="travel-grid" data-travel-list></div>
+        </div>
+      </section>
+
+      <section class="section gallery-band" id="gallery" aria-labelledby="gallery-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Moments</p>
+            <h2 id="gallery-title">Gallery</h2>
+          </div>
+          <div class="gallery-grid" data-gallery-list></div>
+        </div>
+      </section>
+
+      <section class="section rsvp-section" id="rsvp" aria-labelledby="rsvp-title">
+        <div class="section-inner rsvp-grid">
+          <div>
+            <p class="eyebrow">RSVP</p>
+            <h2 id="rsvp-title">Join Us for Dinner</h2>
+            <p class="large-copy">
+              Please respond by <span data-rsvp-deadline>November 20, 2026</span>.
+            </p>
+          </div>
+          <form class="rsvp-form" data-rsvp-form>
+            <label>
+              Full name
+              <input name="name" autocomplete="name" required>
+            </label>
+            <label>
+              Invite code
+              <input name="code" autocomplete="one-time-code" required>
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required>
+            </label>
+            <fieldset>
+              <legend>Will you attend?</legend>
+              <label class="radio-row">
+                <input type="radio" name="attending" value="Yes" checked>
+                Joyfully attending
+              </label>
+              <label class="radio-row">
+                <input type="radio" name="attending" value="No">
+                Sending love from afar
+              </label>
+            </fieldset>
+            <label>
+              Guests
+              <input name="guests" type="number" min="1" max="6" value="1" required>
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="4"></textarea>
+            </label>
+            <button class="button button-primary" type="submit">Send RSVP</button>
+            <p class="form-status" role="status" data-form-status></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        <span data-couple-names>Nikhil & Your Partner</span>
+        <span aria-hidden="true">/</span>
+        <span data-date-label>November 4, 2026</span>
+      </p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
