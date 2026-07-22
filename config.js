@@ -3,7 +3,7 @@ window.weddingConfig = {
     personOne: "Praneeth",
     personTwo: "Kavya",
     displayNames: "Praneeth & Kavya",
-    initials: "P + K"
+    initials: "PK"
   },
   wedding: {
     dateLabel: "November 4, 2026",
@@ -47,8 +47,8 @@ window.weddingConfig = {
     {
       name: "Reception Dinner",
       date: "Wednesday, November 4",
-      time: "8:00 PM",
-      place: "Hyderabad",
+      time: "8:00 PM onwards",
+      place: "Venue@Hyderabad TBD",
       note: "Dinner, blessings, and an evening with the people closest to us."
     }
   ],
